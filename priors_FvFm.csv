@@ -1,0 +1,169 @@
+parameter,value,species,type
+eta,30.2,Solieria paci?ca MAG,PAM
+eta,9.13,Solieria paci?ca YAT,PAM
+eta,25,Kappaphycus sp.,PAM
+eta,3.44,Eucheuma denticulatum,PAM
+eta,2.45,Kappaphycus alvarezii brown,PAM
+eta,1.15,Kappaphycus alvarezii green,PAM
+eta,2.21,Costaria costata GAM,PAM
+eta,20.67,Costaria costata SPO,PAM
+eta,1.93,Saccharina angustata 24-h,PAM
+eta,4.23,Saccharina angustata 48-h,PAM
+eta,9.19,Saccharina angustata 72-h,PAM
+eta,20.38,Alaria crassifolia GAM,PAM
+eta,21.11,Alaria crassifolia SPO,PAM
+eta,1.38,Meristotheca papulosa 24-h,PAM
+eta,2.35,Meristotheca papulosa 48-h,PAM
+eta,2.96,Meristotheca papulosa 72-h,PAM
+eta,1.9,Gelidium elegans,PAM
+eta,2.59,Pterocladiella tenuis,PAM
+eta,23.75,Gelidiella acerosa,PAM
+eta,26.75,Cladosiphon okamuranus macroscopic,PAM
+eta,22,Cladosiphon okamuranus microscopic,PAM
+eta,22.33,Cladosiphon umezakii macroscopic,PAM
+eta,10.83,Cladosiphon umezakii microscopic,PAM
+eta,9.76,Sargassum fusiforme,PAM
+eta,21.56,Thorea okadae,PAM
+eta,6.79,Ecklonia radicosa,PAM
+eta,253.75,Sargassum mcclurei,PAM
+eta,396.67,Sargassum oligocystum,PAM
+eta,4,Thorea gaudichaudii,PAM
+eta,1.78,Kappaphycus alvarezii,PAM
+eta,4.33,Sargassum patens 24-h,PAM
+eta,6.38,Sargassum patens 48-h,PAM
+eta,3.54,Sargassum patens 72-h,PAM
+eta,3.75,Sargassum macrocarpum 24-h,PAM
+eta,1.24,Sargassum macrocarpum 48-h,PAM
+eta,1.64,Sargassum macrocarpum 72-h,PAM
+eta,2.24,Hydropuntia edulis,PAM
+eta,2.27,Hydropuntia eucheumatoides,PAM
+eta,7.86,Pyropia tenera gametophyte,PAM
+eta,2.4,Pyropia tenera sporophyte,PAM
+eta,5.17,Pyropia yezoensis f. narawaensis gametophyte,PAM
+eta,10,Pyropia yezoensis f. narawaensis sporophyte,PAM
+ha,5,Solieria paci?ca MAG,PAM
+ha,15,Solieria paci?ca YAT,PAM
+ha,6,Kappaphycus sp.,PAM
+ha,25,Eucheuma denticulatum,PAM
+ha,38,Kappaphycus alvarezii brown,PAM
+ha,125,Kappaphycus alvarezii green,PAM
+ha,33,Costaria costata GAM,PAM
+ha,6,Costaria costata SPO,PAM
+ha,27,Saccharina angustata 24-h,PAM
+ha,22,Saccharina angustata 48-h,PAM
+ha,16,Saccharina angustata 72-h,PAM
+ha,8,Alaria crassifolia GAM,PAM
+ha,9,Alaria crassifolia SPO,PAM
+ha,136,Meristotheca papulosa 24-h,PAM
+ha,94,Meristotheca papulosa 48-h,PAM
+ha,78,Meristotheca papulosa 72-h,PAM
+ha,78,Gelidium elegans,PAM
+ha,81.5,Pterocladiella tenuis,PAM
+ha,10.4,Gelidiella acerosa,PAM
+ha,4,Cladosiphon okamuranus macroscopic,PAM
+ha,5,Cladosiphon okamuranus microscopic,PAM
+ha,6,Cladosiphon umezakii macroscopic,PAM
+ha,6,Cladosiphon umezakii microscopic,PAM
+ha,17,Sargassum fusiforme,PAM
+ha,8.21,Thorea okadae,PAM
+ha,14,Ecklonia radicosa,PAM
+ha,0.8,Sargassum mcclurei,PAM
+ha,0.6,Sargassum oligocystum,PAM
+ha,6,Thorea gaudichaudii,PAM
+ha,66.7,Kappaphycus alvarezii,PAM
+ha,9,Sargassum patens 24-h,PAM
+ha,8,Sargassum patens 48-h,PAM
+ha,13,Sargassum patens 72-h,PAM
+ha,12,Sargassum macrocarpum 24-h,PAM
+ha,37,Sargassum macrocarpum 48-h,PAM
+ha,22,Sargassum macrocarpum 72-h,PAM
+ha,34,Hydropuntia edulis,PAM
+ha,33,Hydropuntia eucheumatoides,PAM
+ha,10.5,Pyropia tenera gametophyte,PAM
+ha,52,Pyropia tenera sporophyte,PAM
+ha,9.04,Pyropia yezoensis f. narawaensis gametophyte,PAM
+ha,11.2,Pyropia yezoensis f. narawaensis sporophyte,PAM
+topt,19.5,Solieria paci?ca MAG,PAM
+topt,18.6,Solieria paci?ca YAT,PAM
+topt,17.4,Kappaphycus sp.,PAM
+topt,18.8,Eucheuma denticulatum,PAM
+topt,19.5,Kappaphycus alvarezii brown,PAM
+topt,17.3,Kappaphycus alvarezii green,PAM
+topt,14,Costaria costata GAM,PAM
+topt,14.9,Costaria costata SPO,PAM
+topt,8,Saccharina angustata 24-h,PAM
+topt,7,Saccharina angustata 48-h,PAM
+topt,8.4,Saccharina angustata 72-h,PAM
+topt,15.8,Alaria crassifolia GAM,PAM
+topt,20.1,Alaria crassifolia SPO,PAM
+topt,21.5,Meristotheca papulosa 24-h,PAM
+topt,21.9,Meristotheca papulosa 48-h,PAM
+topt,23.6,Meristotheca papulosa 72-h,PAM
+topt,20,Gelidium elegans,PAM
+topt,21.3,Pterocladiella tenuis,PAM
+topt,27.7,Gelidiella acerosa,PAM
+topt,15.1,Cladosiphon okamuranus macroscopic,PAM
+topt,16.5,Cladosiphon okamuranus microscopic,PAM
+topt,15.9,Cladosiphon umezakii macroscopic,PAM
+topt,12.6,Cladosiphon umezakii microscopic,PAM
+topt,22.9,Sargassum fusiforme,PAM
+topt,18.4,Thorea okadae,PAM
+topt,16.5,Ecklonia radicosa,PAM
+topt,20.3,Sargassum mcclurei,PAM
+topt,20.6,Sargassum oligocystum,PAM
+topt,24.1,Thorea gaudichaudii,PAM
+topt,22.2,Kappaphycus alvarezii,PAM
+topt,14.9,Sargassum patens 24-h,PAM
+topt,16,Sargassum patens 48-h,PAM
+topt,13.5,Sargassum patens 72-h,PAM
+topt,11.1,Sargassum macrocarpum 24-h,PAM
+topt,8.9,Sargassum macrocarpum 48-h,PAM
+topt,10.4,Sargassum macrocarpum 72-h,PAM
+topt,22.4,Hydropuntia edulis,PAM
+topt,22.8,Hydropuntia eucheumatoides,PAM
+topt,12.6,Pyropia tenera gametophyte,PAM
+topt,22.7,Pyropia tenera sporophyte,PAM
+topt,14.7,Pyropia yezoensis f. narawaensis gametophyte,PAM
+topt,16.7,Pyropia yezoensis f. narawaensis sporophyte,PAM
+ymax,0.63,Solieria paci?ca MAG,PAM
+ymax,0.55,Solieria paci?ca YAT,PAM
+ymax,0.59,Kappaphycus sp.,PAM
+ymax,0.64,Eucheuma denticulatum,PAM
+ymax,0.55,Kappaphycus alvarezii brown,PAM
+ymax,0.6,Kappaphycus alvarezii green,PAM
+ymax,0.69,Costaria costata GAM,PAM
+ymax,0.73,Costaria costata SPO,PAM
+ymax,0.6,Saccharina angustata 24-h,PAM
+ymax,0.64,Saccharina angustata 48-h,PAM
+ymax,0.65,Saccharina angustata 72-h,PAM
+ymax,0.51,Alaria crassifolia GAM,PAM
+ymax,0.71,Alaria crassifolia SPO,PAM
+ymax,0.33,Meristotheca papulosa 24-h,PAM
+ymax,0.37,Meristotheca papulosa 48-h,PAM
+ymax,0.32,Meristotheca papulosa 72-h,PAM
+ymax,0.49,Gelidium elegans,PAM
+ymax,0.45,Pterocladiella tenuis,PAM
+ymax,0.57,Gelidiella acerosa,PAM
+ymax,0.68,Cladosiphon okamuranus macroscopic,PAM
+ymax,0.7,Cladosiphon okamuranus microscopic,PAM
+ymax,0.75,Cladosiphon umezakii macroscopic,PAM
+ymax,0.77,Cladosiphon umezakii microscopic,PAM
+ymax,0.72,Sargassum fusiforme,PAM
+ymax,0.47,Thorea okadae,PAM
+ymax,0.73,Ecklonia radicosa,PAM
+ymax,0.76,Sargassum mcclurei,PAM
+ymax,0.74,Sargassum oligocystum,PAM
+ymax,0.6,Thorea gaudichaudii,PAM
+ymax,0.51,Kappaphycus alvarezii,PAM
+ymax,0.78,Sargassum patens 24-h,PAM
+ymax,0.78,Sargassum patens 48-h,PAM
+ymax,0.77,Sargassum patens 72-h,PAM
+ymax,0.68,Sargassum macrocarpum 24-h,PAM
+ymax,0.67,Sargassum macrocarpum 48-h,PAM
+ymax,0.68,Sargassum macrocarpum 72-h,PAM
+ymax,0.48,Hydropuntia edulis,PAM
+ymax,0.49,Hydropuntia eucheumatoides,PAM
+ymax,0.55,Pyropia tenera gametophyte,PAM
+ymax,0.48,Pyropia tenera sporophyte,PAM
+ymax,0.55,Pyropia yezoensis f. narawaensis gametophyte,PAM
+ymax,0.6,Pyropia yezoensis f. narawaensis sporophyte,PAM
