@@ -49,11 +49,11 @@ alldata_summary = alldata %>% group_by(Temperature, Light, Hour) %>%
 # Take a look at the data.
 # So the problem is the zeros occurring below 16 °C and above 32 °C.
 temperature_breaks = alldata %>% pull(Temperature) %>% unique()
-alldata %>% ggplot() + 
-  geom_point(aes(x = Temperature, y = FvFm, color = Hour),  
-             position = position_jitter(0.1))  +
-  scale_x_continuous(breaks = temperature_breaks) +
-  facet_grid(rows = vars(Light))
+# alldata %>% ggplot() + 
+#   geom_point(aes(x = Temperature, y = FvFm, color = Hour),  
+#              position = position_jitter(0.1))  +
+#   scale_x_continuous(breaks = temperature_breaks) +
+#   facet_grid(rows = vars(Light))
 
 
 # Bayesian inference with BRMS starts here -------------------------------------
@@ -79,12 +79,11 @@ STANVARS = stanvar(scode = stan_function, block = "functions")
 
 brmsmodel = 
   bf(FvFm ~ fvfmmodel(PS, HA, ET, KT, Temperature)) +
-  lf(PS + HA + ET + KT ~ 0 + (1||Hour)) +
+  lf(PS + HA + ET + KT ~ (1||Hour)) +
   lf(zi ~ Temperature + Temperature2) +
   set_nl() +
   brms::zero_inflated_beta(link = "identity", link_phi = "log", link_zi= "logit")
 
-brmsmodel
 
 # Add the squared Temperature to the dataset.
 alldata = alldata %>% mutate(Temperature2 = Temperature^2)
