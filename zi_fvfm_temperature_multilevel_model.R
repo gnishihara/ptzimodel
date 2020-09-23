@@ -80,7 +80,7 @@ STANVARS = stanvar(scode = stan_function, block = "functions")
 brmsmodel = 
   bf(FvFm ~ fvfmmodel(PS, HA, ET, KT, Temperature)) +
   lf(PS + HA + ET + KT ~ (1||Hour)) +
-  lf(zi ~ Temperature + Temperature2) +
+  lf(zi ~ Temperature:Hour + Temperature2:Hour) +
   set_nl() +
   brms::zero_inflated_beta(link = "identity", link_phi = "log", link_zi= "logit")
 
@@ -121,12 +121,12 @@ PRIORS =
   set_prior(priors %>% filter(parameter == "topt") %>% pull(prior), lb = 273.15, nlpar = "KT") +
   set_prior(priors %>% filter(parameter == "ymax") %>% pull(prior), lb = 0.0,    nlpar = "PS") +
   set_prior(priors %>% filter(parameter == "ha")   %>% pull(prior), lb = 0.0,    nlpar = "HA") +
-  set_prior("student_t(3, 0, 2)", class = "sd", nlpar = "ET") +
-  set_prior("student_t(3, 0, 2)", class = "sd", nlpar = "HA") +
-  set_prior("student_t(3, 0, 2)", class = "sd", nlpar = "KT") +
-  set_prior("student_t(3, 0, 2)", class = "sd", nlpar = "PS") +
-  set_prior("student_t(3, 0, 2)", class = "Intercept", dpar = "zi") +
-  set_prior("student_t(3, 0, 2)", class = "b", dpar = "zi") +
+  set_prior("normal(0, 1)", class = "sd", nlpar = "ET") +
+  set_prior("normal(0, 1)", class = "sd", nlpar = "HA") +
+  set_prior("normal(0, 1)", class = "sd", nlpar = "KT") +
+  set_prior("normal(0, 1)", class = "sd", nlpar = "PS") +
+  set_prior("normal(0, 1)", class = "Intercept", dpar = "zi") +
+  set_prior("normal(0, 1)", class = "b", dpar = "zi") +
   set_prior("student_t(3, 0, 2)", class = "phi") 
 
 
@@ -140,9 +140,9 @@ PRIORS =
 
 # Sample from the posterior distribution ---------------------------------------
 # Parameters fo the sampler
-ITER = 5000
+ITER = 7000
 ADAPT_DELTA = 0.99999
-MAX_TREEDEPTH = 18
+MAX_TREEDEPTH = 20
 CHAINS = 4
 CORES = CHAINS
 CONTROL = list(adapt_delta = ADAPT_DELTA, max_treedepth = MAX_TREEDEPTH)
@@ -152,6 +152,7 @@ stime = lubridate::now()
 outdata00 = brm(brmsmodel,
                 data = data00,
                 stanvars = STANVARS, prior = PRIORS,
+                warmup = 4000,
                 iter = ITER, chains = CHAINS, cores = CORES, 
                 seed = 2020, control = CONTROL,
                 inits = 0,
@@ -165,12 +166,13 @@ save(outdata00, file = "Caulerpa_brms_samples_20200917_0mumol.RData")
 
 
 ADAPT_DELTA = 0.99999
-MAX_TREEDEPTH = 18
+MAX_TREEDEPTH = 20
 
 stime = lubridate::now()
 outdata50 = update(outdata00,
                    newdata = data50,
                    stanvars = STANVARS, prior = PRIORS,
+                   warmup = 4000,
                    iter = ITER, chains = CHAINS, cores = CORES, 
                    seed = 2021, control = CONTROL,
                    inits = 0,
